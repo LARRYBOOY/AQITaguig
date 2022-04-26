@@ -149,16 +149,16 @@
         <div style="display:flex; justify-content:flex-end;">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item ">
-              <a class="nav-link text-light" href="index.php">Home</a>
+              <a class="nav-link text-light" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active-nav text-light" href="medical_clock.php">Medical Clock</a>
+              <a class="nav-link active-nav text-light" href="medical_clock.html">Medical Clock</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="about_us.php">About</a>
+              <a class="nav-link text-light" href="about_us.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="contact_us.php">Contact Us</a>
+              <a class="nav-link text-light" href="contact_us.html">Contact Us</a>
             </li>
             <li class="nav-item">
             <?php
@@ -166,18 +166,18 @@
                 if(isset($_SESSION['role'])){
                   if($_SESSION['role'] == 'admin'){
                     ?>
-                      <a class="nav-link text-light" href="admin/welcome.php"><?php echo $_SESSION['username'] ?></a>
+                      <a class="nav-link text-light" href="admin/welcome.html"><?php echo $_SESSION['username'] ?></a>
                     <?php
                   } else {
                     ?>
-                      <a class="nav-link text-light" href="welcome.php"><?php echo $_SESSION['username'] ?></a>
+                      <a class="nav-link text-light" href="welcome.html"><?php echo $_SESSION['username'] ?></a>
                     <?php
                   }
                 }
 
               } else {
               ?>
-                <a class="nav-link text-light" href="login.php">Log In</a>
+                <a class="nav-link text-light" href="login.html">Log In</a>
               <?php
               }
             ?>
@@ -435,7 +435,7 @@
       </section>
       <!-- ----------- Download Section End ------- -->
     </section>
-      <?php include("include/footer.php") ?>
+      <?php include("include/footer.html") ?>
 
       <!-- - - - -  jquery Js - - - -  -->
       <script src="js/jquery-1.12.4.min.js"></script>
