@@ -132,7 +132,9 @@
         }
 
     </style>
+
   </head>
+
   <body>
       <nav class="navbar navbar-expand-lg navbar-light top-nav" style="background-color: #df3535;">
         <div style="flex-basis: 50%;">
@@ -154,26 +156,8 @@
               <a class="nav-link text-light" href="about_us.html">About Us</a>
             </li>
             <li class="nav-item">
-            <?php
-              if(isset($_SESSION['username'])){
-                if(isset($_SESSION['role'])){
-                  if($_SESSION['role'] == 'admin'){
-                    ?>
-                      <a class="nav-link text-light" href="admin/welcome.php"><?php echo $_SESSION['username'] ?></a>
-                    <?php
-                  } else {
-                    ?>
-                      <a class="nav-link text-light" href="welcome.html"><?php echo $_SESSION['username'] ?></a>
-                    <?php
-                  }
-                }
-
-              } else {
-              ?>
                 <a class="nav-link text-light" href="login.html">Log In</a>
-              <?php
-              }
-            ?>
+
               </li>
           </ul>
         </div>
